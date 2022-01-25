@@ -1,5 +1,4 @@
 # Code Examples
-(for now just one)
 
 **Stores CMS extension in Salesforce Commerce Cloud**
 
