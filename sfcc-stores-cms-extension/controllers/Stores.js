@@ -1,5 +1,13 @@
 'use strict';
 
+/* One thing that could be improved here is how the data is retreived: SFCC offers both an
+internal API as well as a REST API. In the example the internal one is used to get the
+initial data, where as the REST API is used to do the updates. If we want to only use
+the internal API we would have needed to create a custom extension on the store db object,
+since it's not allowed to modify it via the internal API. Therefore the best approach
+would be to also fetch the data from the REST API, so we don't have to re-map
+object keys and values. */
+
 const server = require('server');
 const URLUtils = require("dw/web/URLUtils");
 const Resource = require("dw/web/Resource");
