@@ -22,6 +22,7 @@ This is an example of a CMS extension, where a store manager would be able to ea
 
 #### Navigation
 <img src="https://github.com/bramjoosten/code-examples/blob/main/nav-example.png" alt="Navigation Example" width="200"/>
+
 Not a code example but check out the mobile and desktop navigation on [gall.nl](https://gall.nl). Input is 1 single master json and uses recursion functionality to generate both navigations. The one on mobile is actually being generated in in the template and the one on desktop gets generated client side on user interaction.
 
 
