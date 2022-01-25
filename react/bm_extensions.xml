@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<extensions xmlns="http://www.demandware.com/xml/bmmodules/2007-12-11" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.demandware.com/xml/bmmodules/2007-12-11 bmext.xsd">
+	<menuitem id="merchant_tools_menu" position="5" site="true">
+		<name xml:lang="x-default">Management</name>
+		<short_description xml:lang="x-default">Here you can find your Management related extensions.</short_description>
+		<description xml:lang="x-default">Here you can find your Management related extensions.</description>
+		<icon>icons/integration_ico.gif</icon>
+	</menuitem>
+
+	<menuaction id="stores_merchant_tools_menu" menupath="merchant_tools_menu" position="4" site="true">
+		<name xml:lang="x-default">Stores</name>
+		<short_description xml:lang="x-default">Click here to see Stores</short_description>
+		<description xml:lang="x-default">Here you can see Stores.</description>
+		<exec pipeline="Stores" node="Start" />
+		<sub-pipelines>
+			<pipeline name="Stores-Start" />
+			<pipeline name="Stores-Save" />
+			<pipeline name="Stores-GetDetails" />
+		</sub-pipelines>
+		<parameters>
+            <parameter name="mainmenuname" value="Example"/>
+            <parameter name="menuname" value="Stores"/>
+            <parameter name="menupath" value="stores_merchant_tools"/>
+        </parameters>
+        <permissions>
+        <!-- no permissions necessary for this extension -->
+        </permissions>
+		<icon>images/store.png</icon>
+	</menuaction>
+</extensions>

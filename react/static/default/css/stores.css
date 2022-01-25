@@ -1,0 +1,68 @@
+th {
+  text-align: left;
+}
+
+.app table {
+  border-spacing: 0;
+}
+
+.table-stores {
+  position: relative;
+}
+
+.tr-stores.active {
+  background-color: #e7e7e7;
+}
+
+.table-stores:hover .tr-stores.active {
+  background-color: transparent;
+}
+
+.tr-stores:hover {
+  background-color: #e7e7e7 !important;
+}
+
+.details {
+  position: absolute;
+  top: 0;
+  margin-left: 6px;
+  display: flex;
+  align-items: flex-start;
+  padding: 0;
+  margin-top: -1px;
+}
+
+.app .edit {
+  display: flex;
+  flex-direction: column;
+}
+
+.table-details-edit {
+  margin-left: 6px;
+}
+
+.app .table_detail {
+  height: 31px;
+}
+
+.th-time {
+  min-width: 90px;
+}
+
+.table-stores tbody,
+.table-details-view tbody {
+  cursor: pointer;
+}
+
+.table-details-edit tbody{
+  cursor: default;
+}
+
+.table-details-view:hover tbody {
+  background-color: #e7e7e7;
+}
+
+.stores-button.button {
+  align-self: flex-end;
+  margin-top: 6px;
+}
