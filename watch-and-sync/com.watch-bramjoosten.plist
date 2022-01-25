@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>Label</key>
+        <string>watch-bramjoosten</string>
+        <key>ProgramArguments</key>
+        <array>
+            <string>/Users/bramjoosten/Website/bramjoosten.nl/WatchAndSync.sh</string>
+            <string>--sync-only</string>
+        </array>
+        <key>WatchPaths</key>
+        <array>
+            <string>/Users/bramjoosten/Website/bramjoosten.nl/public_html</string>
+        </array>
+        <key>StandardErrorPath</key>
+        <string>logs/stderr.log</string>
+
+        <key>StandardOutPath</key>
+        <string>logs/stdout.log</string>
+
+        <key>WorkingDirectory</key>
+        <string>/Users/bramjoosten/Website/bramjoosten.nl</string>
+    </dict>
+</plist>
